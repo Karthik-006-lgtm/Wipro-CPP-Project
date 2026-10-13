@@ -1,0 +1,66 @@
+# ========================================================
+# CareerNova AI - Production .gitignore
+# ========================================================
+
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Build Artifacts
+dist/
+**/dist/
+dist-ssr/
+build/
+*.local
+.eslintcache
+
+# Python Virtual Environments & Caches
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+**/.venv/
+env/
+**/env/
+venv/
+**/venv/
+*.egg-info/
+.pytest_cache/
+**/.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Sensitive Environment Files & Credentials (CRITICAL)
+.env
+**/.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+*.pfx
+secrets.json
+
+# Retain template example configs for evaluation setup
+!.env.example
+!**/.env.example
+
+# Local Database & Storage
+*.db
+*.sqlite
+*.sqlite3
+backend/uploads/
+uploads/
+*.log
+
+# Editor & System Files
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
