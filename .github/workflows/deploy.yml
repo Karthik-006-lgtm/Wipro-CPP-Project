@@ -33,7 +33,7 @@ jobs:
       - name: Build Production Bundle
         working-directory: frontend
         env:
-          VITE_API_BASE_URL: http://65.1.107.152
+          VITE_API_BASE_URL: https://65.1.107.152.sslip.io
         run: |
           npm run build
           cp dist/index.html dist/404.html
