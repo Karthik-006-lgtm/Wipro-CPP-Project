@@ -37,6 +37,8 @@ jobs:
 
       - name: Build Production Bundle
         working-directory: frontend
+        env:
+          VITE_API_BASE_URL: http://65.1.107.152
         run: npm run build
 
       - name: Configure GitHub Pages
