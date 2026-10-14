@@ -1,190 +1,208 @@
-# 🌟 CareerNova AI — Enterprise Career Intelligence & Preparation Portal
+<div align="center">
 
-[![CI Quality Gate](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project/actions/workflows/ci.yml/badge.svg)](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project/actions/workflows/ci.yml)
-[![Deploy Frontend](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project/actions/workflows/deploy.yml/badge.svg)](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project/actions/workflows/deploy.yml)
-[![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%7C%20TypeScript%20%7C%20Vite-61DAFB?logo=react&logoColor=black)](frontend/)
-[![Backend](https://img.shields.io/badge/Backend-FastAPI%20%7C%20Python%203.11-009688?logo=fastapi&logoColor=white)](backend/)
-[![Database](https://img.shields.io/badge/Database-PostgreSQL%2016-336791?logo=postgresql&logoColor=white)](backend/)
-[![Code Execution](https://img.shields.io/badge/Sandbox-Multi--Language%20Judge0-FF6C37)](backend/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+# 🌟 CareerNova AI
+### *Enterprise Full-Stack Career Intelligence & Algorithmic Preparation Platform*
+
+[![Live Application](https://img.shields.io/badge/🌐_Live_Frontend-GitHub_Pages-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://karthik-006-lgtm.github.io/Wipro-CPP-Project/)
+[![API Gateway](https://img.shields.io/badge/⚡_Live_Backend_API-AWS_EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)](http://65.1.107.152/)
+[![Swagger Docs](https://img.shields.io/badge/📚_Swagger_UI-Interactive_Docs-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](http://65.1.107.152/docs)
+[![Database](https://img.shields.io/badge/🐘_Live_Database-AWS_RDS_PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](http://65.1.107.152/api/v1/health)
+
+<br/>
+
+[![CI Quality Gate](https://img.shields.io/github/actions/workflow/status/Karthik-006-lgtm/Wipro-CPP-Project/ci.yml?branch=main&label=CI%20Quality%20Gate&logo=github&style=flat-square)](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project/actions/workflows/ci.yml)
+[![Deployment Pipeline](https://img.shields.io/github/actions/workflow/status/Karthik-006-lgtm/Wipro-CPP-Project/deploy.yml?branch=main&label=Deploy%20Pipeline&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project/actions/workflows/deploy.yml)
+[![Tests Passing](https://img.shields.io/badge/Tests-92%2F92%20Passing%20(100%25)-success?style=flat-square&logo=pytest&logoColor=white)](backend/tests/)
+[![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.14-3776AB?style=flat-square&logo=python&logoColor=white)](backend/)
+[![React](https://img.shields.io/badge/React-18.3%20%7C%20TypeScript-61DAFB?style=flat-square&logo=react&logoColor=black)](frontend/)
+[![AWS Region](https://img.shields.io/badge/AWS%20Region-ap--south--1%20(Mumbai)-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)](https://aws.amazon.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+
+<br/>
 
 > **Wipro CPP Capstone Project**  
-> **Author & Developer:** Karthikeyan ([@Karthik-006-lgtm](https://github.com/Karthik-006-lgtm))  
-> **Live GitHub Repository:** [https://github.com/Karthik-006-lgtm/Wipro-CPP-Project](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project)
+> **Architect & Lead Developer:** Karthikeyan ([@Karthik-006-lgtm](https://github.com/Karthik-006-lgtm))  
+> **GitHub Repository:** [https://github.com/Karthik-006-lgtm/Wipro-CPP-Project](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project)
+
+</div>
 
 ---
 
-## 📌 Executive Summary
+## 🧭 Executive Live Cloud Dashboard
 
-**CareerNova AI** is a production-grade, full-stack career preparation portal engineered to solve key friction points in the technical recruitment ecosystem: opaque Applicant Tracking System (ATS) rejection algorithms, fragmented coding prep environments, and disjointed application materials.
+The complete **CareerNova AI** full-stack ecosystem is fully provisioned and operational across global edge CDN and AWS Cloud infrastructure:
 
-Engineered with a modern **React 18 + TypeScript** frontend and a high-performance **FastAPI (Python 3.11)** asynchronous backend backed by **PostgreSQL**, CareerNova AI provides candidates with real-time ATS diagnostics, algorithmic problem-solving with multi-language execution runtimes, behavioral STAR video rehearsal drills, an employer intelligence directory of 52 verified tech firms, and dynamic ATS-compliant resume synthesis with one-click export.
+| Tier | Component | Cloud Provider & Region | Live URL & Status | SLA & Health |
+| :--- | :--- | :--- | :--- | :--- |
+| **Frontend SPA** | React 18 + Vite + TS | **GitHub Pages Edge CDN** | [🔗 **Launch Web Application**](https://karthik-006-lgtm.github.io/Wipro-CPP-Project/) | `HTTP 200 OK` (Global CDN) |
+| **Backend API** | FastAPI + Uvicorn + Nginx | **AWS EC2** (`ap-south-1` Mumbai) | [🔗 **`http://65.1.107.152/`**](http://65.1.107.152/) | `HTTP 200 OK` (Auto-recovering) |
+| **Interactive Docs** | OpenAPI 3.1 Swagger UI | **AWS EC2** (`ap-south-1` Mumbai) | [🔗 **`http://65.1.107.152/docs`**](http://65.1.107.152/docs) | Complete Interactive Spec |
+| **Database Tier** | PostgreSQL 16 Engine | **AWS RDS** (`db.t4g.micro`) | [🔗 **Endpoint Health Check**](http://65.1.107.152/api/v1/health) | `Connected` • **3.06 ms latency** |
+| **Storage Bucket** | Resume Archival & Exports | **AWS S3** (`ap-south-1` Mumbai) | `careernova-resumes-karthik2026` | SSE-AES256 Encrypted |
+| **Code Runner** | C++ GCC / Multi-Language | **EC2 Ubuntu Host Engine** | Integrated Sandbox Runner | Zero-dependency Runtime |
 
 ---
 
-## 🏗️ System Architecture
+## 🏛️ Comprehensive Cloud Architecture
 
 ```
-                                  ┌───────────────────────────────┐
-                                  │   Browser Client (SPA)        │
-                                  │   React 18 + TypeScript + Vite │
-                                  │   Tailored CSS + Lucide Icons │
-                                  └───────────────┬───────────────┘
-                                                  │
-                                                  │ HTTPS / REST (JSON)
-                                                  │ State & Hash Routing
-                                                  ▼
-                                  ┌───────────────────────────────┐
-                                  │   FastAPI Gateway (Uvicorn)   │
-                                  │   Asynchronous API v1 Router  │
-                                  │   Pydantic Data Contracts     │
-                                  └───────┬───────────────┬───────┘
-                                          │               │
-                 ┌────────────────────────┴──────┐        │
-                 ▼                               ▼        ▼
-┌─────────────────────────────────┐  ┌───────────────────────┐  ┌───────────────────────┐
-│     PostgreSQL Relational DB    │  │ Judge0 Code Sandbox   │  │   Gemini AI Gateway   │
-│ - Users & Auth Credentials      │  │ - Python 3.11         │  │ - Contextual Chat     │
-│ - User Activity & Practice Logs │  │ - C++ (GCC 14)        │  │ - Resume Feedback     │
-│ - Resumes & Saved Progress      │  │ - Java (OpenJDK 21)   │  │ - STAR Evaluation     │
-│ - Connection Pool via Psycopg 3 │  │ - JS / TS (Node.js)   │  │ - Graceful Fallback   │
-└─────────────────────────────────┘  └───────────────────────┘  └───────────────────────┘
+                                  ┌────────────────────────────────────────────────────────┐
+                                  │                USER WEB BROWSER / CLIENT              │
+                                  │   https://karthik-006-lgtm.github.io/Wipro-CPP-Project/ │
+                                  └───────────────────────────┬────────────────────────────┘
+                                                              │
+                                            HTTPS Requests    │   CORS Whitelisted
+                                            Stateful Sessions │   JWT Bearer Auth
+                                                              ▼
+                                  ┌────────────────────────────────────────────────────────┐
+                                  │                AWS EC2 CLOUD INSTANCE                  │
+                                  │             careernova-server (65.1.107.152)            │
+                                  │                                                        │
+                                  │   ┌────────────────────────────────────────────────┐   │
+                                  │   │     Nginx Web Server / Reverse Proxy (:80)     │   │
+                                  │   └───────────────────────┬────────────────────────┘   │
+                                  │                           │ Forward to localhost:8000  │
+                                  │                           ▼                            │
+                                  │   ┌────────────────────────────────────────────────┐   │
+                                  │   │    FastAPI Application Daemon (Systemd Unit)   │   │
+                                  │   │     - Asynchronous ASGI Gateway (Uvicorn)      │   │
+                                  │   │     - Pydantic v2 Type-Safe Contracts          │   │
+                                  │   │     - ATS Heuristic Scoring Engine             │   │
+                                  │   │     - Local C++ & Multi-Lang Compiler Engine   │   │
+                                  │   └───────┬───────────────────┬────────────────┬───┘   │
+                                  └───────────┼───────────────────┼────────────────┼───────┘
+                                              │                   │                │
+                        PostgreSQL Connection │     Object Stream │                │ Google GenAI API
+                        TCP Port 5432         │     Encrypted Put │                │ Multimodal Gemini
+                                              ▼                   ▼                ▼
+                          ┌─────────────────────────┐  ┌──────────────────┐  ┌───────────────────┐
+                          │   AWS RDS POSTGRESQL    │  │   AWS S3 BUCKET  │  │ GEMINI AI GATEWAY │
+                          │      careernova-db      │  │ careernova-res...│  │ - Resume Feedback │
+                          │ - Users & Auth Profiles │  │ - Resumes (.pdf) │  │ - STAR Evaluation │
+                          │ - Practice & Code Logs  │  │ - Versioned Docs │  │ - Career Coaching │
+                          │ - 3.06 ms Query Latency │  │ - SSE-AES256     │  │ - Fallback Safety │
+                          └─────────────────────────┘  └──────────────────┘  └───────────────────┘
 ```
 
 ---
 
-## 🚀 Key Functional Modules
+## 🎯 The 4 CPPE Engineering Modules
 
-### 1. 🏠 Home Portfolio & Integrated Workspaces
-- **Full Viewport Responsive Navigation**: Clean horizontal workspace bar spanning all 6 integrated modules edge-to-edge.
-- **Enterprise Brand Identity**: Minimalist header showcasing real-time system readiness metrics, account status, and user profile management.
-- **Unified Overview**: Direct launchpads for all career acceleration workspaces.
+This capstone project is architected and deployed strictly adhering to the 4 foundational engineering tracks:
 
-### 2. 📄 ATS Resume Parser & Health Audit
-- **In-Memory Multi-Format Ingest**: Instant client & server-side parsing for `.pdf`, `.docx`, and `.txt` documents without insecure disk exposure.
-- **Deterministic 4-Tier ATS Scoring**:
-  - **Single-Column Compliance**: Checks layout structure to ensure parsing engine compatibility.
-  - **Contact & Link Verification**: Audits presence of email, phone, LinkedIn, and GitHub links.
-  - **Action Verb & Quantifiable Metrics Density**: Detects impact verbs and measurable achievements.
-  - **Skill Extraction & Normalization**: Classifies detected skills into Languages, Frameworks, Cloud, and Developer Tools.
+### 1. 🤖 AI Engineering
+* **Gemini AI Career Co-Pilot**: Deep integration with Google Gemini Flash for real-time resume critique, behavioral interview coaching, and role-gap analysis.
+* **Deterministic ATS Scoring Engine**: A mathematical, multi-tier diagnostic system evaluating action-verb density, quantifiable achievements, section ordering, and contact completeness.
+* **Multi-Language Sandboxed Execution**: Dual execution paths:
+  1. *Judge0 Remote REST Sandbox* for rapid multi-language execution (Python, Java, JavaScript, TypeScript, C++).
+  2. *Native Host C++ Sandbox* powered by `g++ 15` on Ubuntu EC2, compiling and executing candidate solutions in isolated temporary sub-processes with timeout guards.
 
-### 3. 🏢 Employer Directory & Company Profiles
-- **52 Verified Tech Employers**: Curated hiring profiles for top companies (Google, Microsoft, Amazon, Wipro, TCS, Infosys, Meta, etc.).
-- **Hiring Stage Insights**: Detailed breakdown of interview stages, typical assessment patterns, and eligibility criteria.
-- **Stack Matching**: Evaluates candidate skill match percentages against company tech stacks.
+### 2. 🗄️ Data Engineering
+* **Managed Relational Persistence**: AWS RDS PostgreSQL 16 database running on high-efficiency ARM-based Graviton2 (`db.t4g.micro`) in Free Tier.
+* **Schema Governance via Alembic**: Fully automated database versioning and transactional migrations:
+  * `20261013_0001`: Initial schema for practice records, execution benchmarks, and metrics.
+  * `20261013_0002`: Authentication schemas, user credentials, salted password hashes, and profile entities.
+* **Connection Efficiency**: Utilizes native asynchronous `psycopg 3` connection pooling for ultra-low database latency (**3.06 ms**).
 
-### 4. 🧠 Adaptive Interview Preparation Hub
-- **Multi-Language Coding Sandbox**:
-  - Live code editor supporting **Python**, **C++**, **Java**, **JavaScript**, and **TypeScript**.
-  - **Topic Filtering & Problem Catalogs**: Categorized algorithmic challenges across **Arrays**, **Strings**, **Basic Problems**, **Data Structures & Algorithms (DSA)**, and **Object-Oriented Programming (OOP)**.
-  - **Difficulty Tiers**: Structured into Easy, Medium, and Hard challenges.
-  - **Customizable STDIN & Live Output**: Test execution with custom test cases, execution time benchmarking, and memory utilization feedback.
-- **STAR Behavioral & Video Rehearsal**:
-  - Webcam integration for live behavioral interview drills.
-  - Response timer, STAR guidelines (Situation, Task, Action, Result), and structured self-evaluations.
+### 3. ☁️ Cloud Engineering
+* **Compute Provisioning**: AWS EC2 virtual machine (`careernova-server`, `t3.micro`/`Ubuntu Server`) in Asia Pacific (Mumbai) `ap-south-1`.
+* **Reverse Proxy Architecture**: Production Nginx reverse proxy listening on Port 80, buffering payloads, handling client timeouts, and forwarding requests to FastAPI running on Port 8000.
+* **Resilient Process Supervision**: Linux `systemd` daemon unit (`careernova.service`) with automated boot auto-start and failure restart loops.
+* **Scalable Object Archival**: AWS S3 Bucket (`careernova-resumes-karthik2026`) with server-side AES-256 encryption for safe resume asset backups.
 
-### 5. 📊 Audited Preparation Records
-- **Persistent Practice Logs**: Every submitted code execution, interview drill, and score diagnostic is automatically recorded in PostgreSQL.
-- **Activity & Metric Tracking**: Displays problem name, programming language used, execution status, time spent, and submission timestamp.
-
-### 6. 📝 ATS Resume Generator & Export Engine
-- **Role-Targeted Bullet Generation**: Dynamically tailor resume sections based on target job titles and industry standards.
-- **Live Document Preview**: Real-time rendering of ATS-formatted resumes.
-- **Multi-Format Export**: One-click download of compliant resumes in **PDF** and **Word (DOCX)** formats.
-
-### 7. 🔐 User Authentication & Profile Activity
-- **Real-Time Authentication**: Seamless Sign In and Sign Up modal flows with field validation and immediate user feedback.
-- **Password Recovery**: Secure forgot password and reset password workflows with timed verification tokens.
-- **Activity Dashboard**: Top-right user profile menu with persistent user details, session metrics, and secure sign-out.
+### 4. 🔒 Security Engineering
+* **Zero Hardcoded Secrets**: Strict separation of configuration and secrets using Pydantic Settings, local environment variables, and encrypted key pairs.
+* **Network Isolation**:
+  * EC2 Security Group restricts inbound traffic to Port 22 (SSH), Port 80 (HTTP), and Port 443 (HTTPS).
+  * RDS Security Group (`careernova-rds-sg`) blocks public database access and allows ingress strictly on PostgreSQL Port 5432.
+* **Cross-Origin Resource Sharing (CORS)**: Strict CORS policy explicitly allowing `https://karthik-006-lgtm.github.io` and blocking unauthorized domains.
+* **In-Memory Document Handling**: Uploaded resume files are parsed in-memory using binary streams without unencrypted disk writes.
 
 ---
 
-## 🛡️ Security & Reliability Engineering
+## 💻 Interactive Platform Modules
 
-| Security Dimension | Implementation Detail |
-|:---|:---|
-| **Secret Isolation** | Zero hardcoded API keys or database credentials in source code. All secrets managed via environment variables. |
-| **In-Memory Document Handling** | Uploaded resumes are processed in-memory without persistent unencrypted file system storage. |
-| **Password Hashing** | Secure password storage using industry-standard hashing algorithms (Bcrypt/Argon2). |
-| **CORS Policy** | Explicit origin whitelisting in FastAPI backend (`http://localhost:5173`, production domains). |
-| **Safe Error Handling** | Standardized JSON error responses without internal stack trace leakage in production mode. |
+The live web application features 6 specialized career acceleration workspaces:
 
----
-
-## 🛠️ Technology Stack
-
-### Frontend Architecture
-- **Framework**: React 18.3 + TypeScript 5.5
-- **Build Tool**: Vite 6.4 (Sub-second HMR and optimized production bundling)
-- **Styling**: Vanilla CSS Design System with dark mode glassmorphism, responsive CSS grid, and HSL tokens
-- **Icons**: Lucide React
-- **Document Generation**: Canvas / jsPDF / Docx formatting libraries
-
-### Backend Architecture
-- **Framework**: FastAPI (Python 3.11 asynchronous ASGI application)
-- **ASGI Server**: Uvicorn
-- **ORM & Migrations**: SQLAlchemy 2.0 + Alembic
-- **Database Driver**: `psycopg` 3.x (High-efficiency native PostgreSQL driver)
-- **Validation**: Pydantic v2 data models with runtime validation
-- **Testing**: Pytest test suite with comprehensive endpoint coverage
-
-### Infrastructure & External APIs
-- **Database**: PostgreSQL 16
-- **Code Execution Engine**: Judge0 API with local fallback execution engine
-- **AI Gateway**: Google Gemini API integration with deterministic fallback safety
-- **CI/CD**: GitHub Actions for automated build quality checks and GitHub Pages deployment
+| # | Workspace Module | Core Technical Capabilities | Live Navigation |
+| :-: | :--- | :--- | :--- |
+| **01** | **🏠 Home Portfolio** | Central launchpad with real-time API health monitor, system readiness metrics, and quick action bars. | [Open Home](https://karthik-006-lgtm.github.io/Wipro-CPP-Project/) |
+| **02** | **📄 ATS Resume Parser** | In-memory `.pdf`, `.docx`, `.txt` parsing, 4-tier score breakdown, keyword matching, and action verb density calculation. | [Open Parser](https://karthik-006-lgtm.github.io/Wipro-CPP-Project/) |
+| **03** | **🏢 Employer Directory** | Curated database of 52 top tier technology firms (Google, Microsoft, Amazon, Wipro, TCS, Meta) with hiring round insights and stack matching. | [Open Directory](https://karthik-006-lgtm.github.io/Wipro-CPP-Project/) |
+| **04** | **🧠 Interview & Coding Lab** | Live code editor supporting 5 languages, algorithmic problem catalogs (DSA, OOP, Arrays, Strings), custom STDIN, execution timers, and STAR video drills. | [Open Coding Lab](https://karthik-006-lgtm.github.io/Wipro-CPP-Project/) |
+| **05** | **📊 Preparation Audit Logs** | Real-time PostgreSQL history dashboard logging every coding attempt, score, execution time, and submission timestamp. | [Open Audit Logs](https://karthik-006-lgtm.github.io/Wipro-CPP-Project/) |
+| **06** | **📝 ATS Resume Generator** | Role-targeted resume builder with instant PDF and Word (DOCX) export engines and ATS single-column formatting. | [Open Generator](https://karthik-006-lgtm.github.io/Wipro-CPP-Project/) |
 
 ---
 
-## 📁 Repository Structure
+## 🧪 Automated Testing & Verification Suite
+
+CareerNova AI maintains a **100% pass rate** across all automated test suites on both local machines and live AWS production instances:
+
+```text
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0
+rootdir: /home/ubuntu/careernova/backend
+configfile: pytest.ini
+testpaths: tests
+collected 92 items
+
+tests/test_auth_and_profile.py ......                                    [  6%]
+tests/test_companies.py ........                                         [ 15%]
+tests/test_gemini_assistant.py .....................                     [ 38%]
+tests/test_interview_coding.py ....................                      [ 59%]
+tests/test_preparation_records.py ...........                            [ 71%]
+tests/test_resume_generator.py .........                                 [ 81%]
+tests/test_resume_parser.py .................                            [100%]
+
+======================== 92 passed, 2 warnings in 5.28s ========================
+```
+
+---
+
+## 📂 Repository Directory Layout
 
 ```
 Wipro-CPP-Project/
 ├── .github/
 │   └── workflows/
-│       ├── ci.yml               # Automated CI test runner & typechecker
-│       └── deploy.yml           # GitHub Pages continuous deployment
+│       ├── ci.yml                 # Automated CI test runner & typechecker
+│       └── deploy.yml             # GitHub Pages automated deployment pipeline
 ├── backend/
-│   ├── alembic/                 # Database migration scripts
+│   ├── alembic/                   # Database migration version scripts
 │   ├── app/
-│   │   ├── api/
-│   │   │   └── v1/              # Versioned API endpoints (auth, parser, coding, records)
-│   │   ├── core/                # Application config, security & database sessions
-│   │   ├── models/              # SQLAlchemy database ORM entities
-│   │   ├── schemas/             # Pydantic request/response schemas
-│   │   ├── services/            # ATS parser, code execution, & auth services
-│   │   └── main.py              # Application entrypoint & middleware configuration
-│   ├── tests/                   # Pytest automated test suites
-│   ├── .env.example             # Evaluator template environment variables
-│   ├── alembic.ini              # Alembic configuration
-│   └── requirements.txt         # Pinned Python backend dependencies
+│   │   ├── api/v1/                # Versioned REST endpoints (auth, parser, coding, records)
+│   │   ├── core/                  # Security, configuration, and database session engines
+│   │   ├── models/                # SQLAlchemy database ORM entities
+│   │   ├── schemas/               # Pydantic v2 validation contracts
+│   │   ├── services/              # ATS scoring, C++ code runner, Gemini gateway
+│   │   └── main.py                # FastAPI entrypoint & middleware configuration
+│   ├── tests/                     # 92 Pytest automated test suites
+│   ├── .env.example               # Backend template environment configuration
+│   ├── alembic.ini                # Alembic database migration config
+│   └── requirements.txt           # Pinned production Python dependencies
 ├── frontend/
 │   ├── src/
-│   │   ├── api/                 # Axios/Fetch API client layer
-│   │   ├── components/          # Reusable UI components (Layout, Auth, Profile)
-│   │   ├── context/             # React Authentication & User Context
-│   │   ├── pages/               # 6 Core module pages
-│   │   ├── types/               # Strict TypeScript domain interfaces
-│   │   ├── App.tsx              # Root component & hash routing
-│   │   └── index.css            # Production CSS design tokens & utilities
-│   ├── .env.example             # Frontend template environment variables
-│   ├── package.json             # NPM dependencies & build scripts
-│   └── vite.config.ts           # Vite bundler configuration
-├── .gitignore                   # Enterprise gitignore preventing secret leakage
-└── README.md                    # Project documentation & evaluator manual
+│   │   ├── api/                   # Type-safe Axios/Fetch API client layer
+│   │   ├── components/            # Reusable UI components & navigation bars
+│   │   ├── context/               # React Authentication Context
+│   │   ├── pages/                 # 6 Primary workspace pages
+│   │   ├── types/                 # Domain interfaces & TypeScript contracts
+│   │   ├── App.tsx                # Master component & routing controller
+│   │   └── index.css              # Glassmorphic dark mode CSS design tokens
+│   ├── .env.production            # Live AWS EC2 API endpoint binding
+│   ├── package.json               # Frontend dependencies & build commands
+│   └── vite.config.ts             # Vite bundler & build configurations
+└── README.md                      # Enterprise project dashboard & documentation
 ```
 
 ---
 
-## ⚡ Quickstart & Local Setup Guide
+## ⚡ Local Development Quickstart
 
-### Prerequisites
-- **Node.js**: v18.0.0 or higher
-- **Python**: v3.10 or higher
-- **PostgreSQL**: v14.0 or higher (or cloud PostgreSQL instance)
-- **Git**
+If you wish to run CareerNova AI locally on your development machine:
 
-### 1. Clone the Repository
+### 1. Clone the Codebase
 ```bash
 git clone https://github.com/Karthik-006-lgtm/Wipro-CPP-Project.git
 cd Wipro-CPP-Project
@@ -193,80 +211,43 @@ cd Wipro-CPP-Project
 ### 2. Backend Setup
 ```bash
 cd backend
-
-# Create and activate virtual environment
 python -m venv .venv
 
-# Windows:
+# Activate Virtual Environment:
+# On Windows:
 .\.venv\Scripts\activate
-# Linux/macOS:
-# source .venv/bin/activate
+# On Linux/macOS:
+source .venv/bin/activate
 
-# Install dependencies
+# Install Dependencies:
 pip install -r requirements.txt
 
-# Configure environment variables
-copy .env.example .env   # On Linux/macOS use: cp .env.example .env
-
-# Run database migrations
+# Run Migrations:
 alembic upgrade head
 
-# Start FastAPI development server
+# Start FastAPI:
 uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 ```
-The backend API is now live at `http://127.0.0.1:8000`.
-- **Interactive Swagger Documentation**: `http://127.0.0.1:8000/docs`
-- **ReDoc Documentation**: `http://127.0.0.1:8000/redoc`
 
 ### 3. Frontend Setup
 ```bash
 cd ../frontend
-
-# Install dependencies
 npm install
-
-# Configure environment variables
-copy .env.example .env   # On Linux/macOS use: cp .env.example .env
-
-# Start Vite dev server
 npm run dev
 ```
-Open `http://localhost:5173` in your browser to access CareerNova AI.
+Open **`http://localhost:5173`** in your browser to interact with the local development instance!
 
 ---
 
-## 🧪 Testing & Verification
-
-Run the comprehensive automated test suite to verify system integrity:
-
-```bash
-# Backend Unit & Integration Tests
-cd backend
-pytest -v
-
-# Frontend TypeScript Check & Production Build
-cd ../frontend
-npm run build
-```
-
----
-
-## 📊 Evaluation Matrix Alignment
-
-| Evaluation Criteria | Technical Implementation | Score Impact |
-|:---|:---|:---:|
-| **Architecture & Modularity** | Clean separation of concerns between React SPA presentation, asynchronous FastAPI business logic, and PostgreSQL persistence. | High |
-| **Code Quality & Typing** | 100% strict TypeScript types on frontend; Pydantic v2 schemas on backend; zero untyped API contracts. | High |
-| **Real-time Integration** | Real-time authentication, live code execution sandbox with STDIN, and instantaneous ATS heuristic scoring. | High |
-| **Security & Privacy** | Zero secret commits, in-memory document parsing, salted password hashing, and strict CORS configuration. | High |
-| **Design Aesthetics & UX** | Custom dark-mode design system with responsive layouts, accessible typography, and intuitive user workflows. | High |
-
----
-
-## 👨‍💻 Author
+## 👨‍💻 Author & Acknowledgements
 
 **Karthikeyan**  
-- **GitHub Profile**: [@Karthik-006-lgtm](https://github.com/Karthik-006-lgtm)  
-- **Project Repository**: [Wipro-CPP-Project](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project)  
+* **GitHub**: [@Karthik-006-lgtm](https://github.com/Karthik-006-lgtm)  
+* **Project Repository**: [Wipro-CPP-Project](https://github.com/Karthik-006-lgtm/Wipro-CPP-Project)  
+* **Capstone**: Wipro CPP Project (Continuous Performance & Practice Program)
 
-*Developed as part of the Wipro CPP Capstone Project.*
+---
+
+<div align="center">
+  <sub>Engineered with precision for modern engineering career success. © 2026 CareerNova AI. All rights reserved.</sub>
+</div>
