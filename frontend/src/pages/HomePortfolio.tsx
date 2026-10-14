@@ -9,6 +9,11 @@ import {
   ArrowRight,
   Sparkles,
   CheckCircle2,
+  Cloud,
+  Server,
+  Database,
+  ExternalLink,
+  ShieldCheck,
 } from 'lucide-react';
 import { PortalSectionId } from '../types';
 
@@ -145,6 +150,115 @@ export const HomePortfolio: React.FC<HomePortfolioProps> = ({ onNavigate }) => {
                 <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#fbbf24' }}>Interactive</div>
                 <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>Interview Practice</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Live Cloud Infrastructure Dashboard Banner */}
+      <div
+        style={{
+          background: 'linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.85) 100%)',
+          border: '1px solid rgba(99, 102, 241, 0.25)',
+          borderRadius: '14px',
+          padding: '1.25rem 1.5rem',
+          marginBottom: '2rem',
+          boxShadow: '0 8px 32px rgba(0, 0, 0, 0.25)',
+          backdropFilter: 'blur(8px)',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+            <span style={{ display: 'inline-flex', padding: '0.4rem', borderRadius: '8px', background: 'rgba(99, 102, 241, 0.15)', color: '#818cf8' }}>
+              <Cloud size={18} />
+            </span>
+            <div>
+              <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                AWS Cloud Production Infrastructure
+                <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: '12px', background: 'rgba(52, 211, 153, 0.15)', color: '#34d399', fontWeight: 600 }}>
+                  ● Live & Operational
+                </span>
+              </div>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>
+                Region: Asia Pacific (Mumbai) ap-south-1 • Latency: &lt; 5ms
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <a
+              href="http://65.1.107.152/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                fontSize: '0.8rem',
+                fontWeight: 600,
+                padding: '0.45rem 0.85rem',
+                borderRadius: '8px',
+                background: 'rgba(99, 102, 241, 0.2)',
+                border: '1px solid rgba(99, 102, 241, 0.4)',
+                color: '#c7d2fe',
+                textDecoration: 'none',
+                transition: 'all 0.2s',
+              }}
+            >
+              <span>Swagger API Docs</span>
+              <ExternalLink size={13} />
+            </a>
+            <a
+              href="http://65.1.107.152/api/v1/health"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                fontSize: '0.8rem',
+                fontWeight: 600,
+                padding: '0.45rem 0.85rem',
+                borderRadius: '8px',
+                background: 'rgba(52, 211, 153, 0.12)',
+                border: '1px solid rgba(52, 211, 153, 0.3)',
+                color: '#6ee7b7',
+                textDecoration: 'none',
+                transition: 'all 0.2s',
+              }}
+            >
+              <span>API Health Monitor</span>
+              <ExternalLink size={13} />
+            </a>
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.85rem' }}>
+          <div style={{ background: 'rgba(15, 23, 42, 0.5)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.05)', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <Server size={18} color="#38bdf8" />
+            <div>
+              <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>EC2 Backend</div>
+              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#f8fafc' }}>FastAPI + Nginx</div>
+            </div>
+          </div>
+          <div style={{ background: 'rgba(15, 23, 42, 0.5)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.05)', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <Database size={18} color="#34d399" />
+            <div>
+              <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>AWS RDS Database</div>
+              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#f8fafc' }}>PostgreSQL 16</div>
+            </div>
+          </div>
+          <div style={{ background: 'rgba(15, 23, 42, 0.5)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.05)', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <Cloud size={18} color="#f59e0b" />
+            <div>
+              <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Storage</div>
+              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#f8fafc' }}>AWS S3 Encrypted</div>
+            </div>
+          </div>
+          <div style={{ background: 'rgba(15, 23, 42, 0.5)', padding: '0.75rem 1rem', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.05)', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ShieldCheck size={18} color="#a78bfa" />
+            <div>
+              <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Security</div>
+              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#f8fafc' }}>JWT + CORS Guard</div>
             </div>
           </div>
         </div>
