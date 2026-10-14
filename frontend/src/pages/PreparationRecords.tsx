@@ -155,14 +155,7 @@ export const PreparationRecords: React.FC<PreparationRecordsProps> = ({ onNaviga
       )}
 
       {/* 4-Card Analytics Metrics Row */}
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-          gap: '1.25rem',
-          marginBottom: '2rem',
-        }}
-      >
+      <div className="records-analytics-grid">
         <div
           style={{
             background: 'rgba(15, 23, 42, 0.65)',

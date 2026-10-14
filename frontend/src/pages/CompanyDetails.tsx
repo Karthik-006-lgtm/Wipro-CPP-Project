@@ -267,7 +267,7 @@ export const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onNavigate }) =>
 
       {/* Interactive Search Bar & Results Counter */}
       <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-        <form onSubmit={handleSearchSubmit} style={{ display: 'flex', gap: '0.75rem', flex: 1, minWidth: '300px' }}>
+        <form onSubmit={handleSearchSubmit} style={{ display: 'flex', gap: '0.75rem', flex: 1, minWidth: 0, width: '100%' }}>
           <div style={{ position: 'relative', flex: 1 }}>
             <Search
               size={16}
@@ -365,7 +365,7 @@ export const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onNavigate }) =>
           onAction={handleClearSearch}
         />
       ) : (
-        <div className="grid-cards" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '1.25rem' }}>
+        <div className="grid-cards company-cards-grid">
           {companies.map((company) => {
             const hasScore = company.match_score !== undefined;
             const score = company.match_score || 0;

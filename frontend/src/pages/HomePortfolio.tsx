@@ -118,6 +118,7 @@ export const HomePortfolio: React.FC<HomePortfolioProps> = ({ onNavigate }) => {
 
           {/* Right Hero Stats Matrix Card */}
           <div
+            className="home-hero-stats-card"
             style={{
               background: 'rgba(15, 23, 42, 0.75)',
               border: '1px solid rgba(255, 255, 255, 0.1)',
@@ -126,7 +127,7 @@ export const HomePortfolio: React.FC<HomePortfolioProps> = ({ onNavigate }) => {
               display: 'flex',
               flexDirection: 'column',
               gap: '0.85rem',
-              minWidth: '280px',
+              minWidth: 0,
               boxShadow: '0 8px 24px rgba(0, 0, 0, 0.3)',
             }}
           >
@@ -186,7 +187,7 @@ export const HomePortfolio: React.FC<HomePortfolioProps> = ({ onNavigate }) => {
           </div>
           <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
             <a
-              href="http://65.1.107.152/docs"
+              href="https://65.1.107.152.sslip.io/docs"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -208,7 +209,7 @@ export const HomePortfolio: React.FC<HomePortfolioProps> = ({ onNavigate }) => {
               <ExternalLink size={13} />
             </a>
             <a
-              href="http://65.1.107.152/api/v1/health"
+              href="https://65.1.107.152.sslip.io/api/v1/health"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -275,15 +276,7 @@ export const HomePortfolio: React.FC<HomePortfolioProps> = ({ onNavigate }) => {
           </span>
         </div>
 
-        <div
-          className="grid-cards"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-            gap: '1.5rem',
-            width: '100%',
-          }}
-        >
+        <div className="grid-cards home-modules-grid">
           {sections.map((sec) => {
             const isCurrent = sec.id === 'home';
             return (

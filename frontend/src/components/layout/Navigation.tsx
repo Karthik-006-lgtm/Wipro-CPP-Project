@@ -114,7 +114,6 @@ export const Navigation: React.FC<NavigationProps> = ({
                 className={`nav-item-btn ${isActive ? 'active' : ''}`}
                 onClick={() => onSelectSection(section.id)}
                 onKeyDown={(e) => handleKeyDown(e, idx)}
-                style={{ flex: 1, justifyContent: 'center' }}
               >
                 {getIcon(section.id)}
                 <span>{section.shortTitle}</span>

@@ -357,14 +357,7 @@ export const ResumeParser: React.FC<ResumeParserProps> = ({ onNavigate }) => {
         </div>
 
         {/* Three Ingestion Capabilities Highlights Cards */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '1.25rem',
-            marginBottom: '2rem',
-          }}
-        >
+        <div className="resume-capabilities-grid">
           <div
             style={{
               background: 'rgba(15, 23, 42, 0.55)',

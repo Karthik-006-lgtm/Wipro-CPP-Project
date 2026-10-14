@@ -613,15 +613,8 @@ export const ResumeGenerator: React.FC = () => {
         </button>
       </div>
 
-      {/* Main Workspace: 2-Column Split (Form Editor vs Live Preview) */}
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'minmax(360px, 1.15fr) minmax(380px, 1.2fr)',
-          gap: '1.5rem',
-          alignItems: 'start',
-        }}
-      >
+      {/* Main Workspace: 2-Column Split on Desktop, Stacked on Mobile */}
+      <div className="resume-builder-grid">
         {/* ======================================================== */}
         {/* LEFT COLUMN: MULTI-SECTION RESUME FORM EDITOR            */}
         {/* ======================================================== */}

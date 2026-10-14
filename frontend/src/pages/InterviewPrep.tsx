@@ -2142,7 +2142,7 @@ export const InterviewPrep: React.FC<InterviewPrepProps> = ({ onNavigate }) => {
           </div>
 
           {/* Media Capture & Recording Studio Layout */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '1.5rem', alignItems: 'start' }}>
+          <div className="interview-video-studio-grid">
             {/* Left: Video Recorder / Preview */}
             <div className="card" style={{ padding: '1.25rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>

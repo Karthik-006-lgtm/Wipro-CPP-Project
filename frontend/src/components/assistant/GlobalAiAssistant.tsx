@@ -5,7 +5,6 @@ import {
   Send,
   Sparkles,
   AlertCircle,
-  Shield,
   Trash2,
   Mic,
   MicOff,
@@ -69,62 +68,62 @@ export const GlobalAiAssistant: React.FC<GlobalAiAssistantProps> = ({
     switch (id) {
       case 'home':
         return {
-          name: 'Section 1: Home & Portfolio',
-          subtitle: 'Executive Portal Overview & Readiness Architecture',
+          name: 'Section 1: Home & Executive Overview',
+          subtitle: 'Career Intelligence & Interview Acceleration Co-pilot',
           starters: [
-            'What core features and tools are available across the six portal sections?',
-            'How are API keys and external service credentials safeguarded?',
-            'Where should I begin if I want to audit an existing resume against ATS standards?',
+            "How can I maximize my resume's match rate for top tech companies?",
+            'What is the recommended workflow to prepare for technical interviews?',
+            'Can you help me plan a 4-week interview preparation roadmap?',
           ],
         };
       case 'resume-parser':
         return {
-          name: 'Section 2: Resume Parser & Skill Extraction',
-          subtitle: 'Deterministic Text Extraction & ATS Scoring Rules',
+          name: 'Section 2: Resume Parser & ATS Audit',
+          subtitle: 'High-Accuracy Text Parsing & Transparent ATS Diagnostics',
           starters: [
-            'How does the ATS scoring algorithm evaluate quantifiable metrics?',
-            'Explain the difference between extracted skills and recommended skills.',
-            'What formatting choices cause standard ATS parsers to misread section headers?',
+            'How do top tech ATS parsers score quantifiable metrics and impact verbs?',
+            'How can I highlight system architecture and cloud skills on my resume?',
+            'What formatting mistakes commonly cause resumes to fail ATS scans?',
           ],
         };
       case 'company-details':
         return {
-          name: 'Section 3: Company Matching & Discovery',
-          subtitle: 'Target Organization Research & Technological Alignment',
+          name: 'Section 3: Company Intelligence & Matching',
+          subtitle: 'Employer Tech Stack Alignment & 52 Verified Tech Firms',
           starters: [
-            'Are there verified company records currently populated in this environment?',
-            'How should I research a tech company’s engineering stack before an interview?',
-            'What questions should I ask engineering interviewers to assess team architecture?',
+            'What technical skills do tier-1 tech companies prioritize most in 2026?',
+            'How should I research an engineering team’s tech stack before an interview?',
+            'What smart architectural questions should I ask engineering interviewers?',
           ],
         };
       case 'interview-prep':
         return {
-          name: 'Section 4: Adaptive Interview & Coding Prep',
-          subtitle: 'Algorithmic Sandbox, STAR Behavioral Rubric & System Design',
+          name: 'Section 4: Technical & Behavioral Interview Lab',
+          subtitle: 'Algorithmic Coding Sandbox, STAR Drills & System Design',
           starters: [
-            'Explain the STAR framework structure for a difficult technical trade-off question.',
-            'What are the four core pillars evaluated in the System Architecture assessment?',
-            'How can I optimize an algorithmic problem from O(N^2) time to O(N) using a hash map?',
+            'How do I structure a behavioral answer using the STAR framework?',
+            'Explain how to optimize an algorithmic problem from O(N^2) to O(N) using a hash map.',
+            'Can you explain the key tradeoffs between SQL and NoSQL in system design?',
           ],
         };
       case 'preparation-records':
         return {
           name: 'Section 5: Preparation History & Analytics',
-          subtitle: 'Persistent PostgreSQL Practice Logs & Performance Trends',
+          subtitle: 'Persistent Performance Tracking & Skill Mastery Trends',
           starters: [
-            'What types of practice sessions are tracked in Preparation Records?',
-            'Why do preparation records require a connected PostgreSQL database to persist?',
-            'How can I analyze my scores across coding, architecture, and behavioral practice?',
+            'How can I analyze my strengths and gaps across coding and behavioral drills?',
+            'What metrics should I focus on to improve my coding interview speed?',
+            'How should I organize my daily practice routine across DSA and behavioral topics?',
           ],
         };
       case 'resume-generator':
         return {
-          name: 'Section 6: ATS Resume Tailoring',
-          subtitle: 'Professional PDF & Word Export with Validated Content',
+          name: 'Section 6: ATS Resume Synthesis',
+          subtitle: 'Single-Column ATS Templates with PDF & Word DOCX Export',
           starters: [
-            'How do I rephrase my project contributions to emphasize quantifiable impact?',
-            'What is the difference between the Classic Professional and Modern Technical templates?',
-            'Help me write a concise 3-sentence professional summary for a software engineering role.',
+            'How do I rewrite an experience bullet using the Google "Accomplished [X] by doing [Z]" formula?',
+            'Help me write an impactful 3-sentence professional summary for a software engineer.',
+            'How can I present personal and open-source projects to impress engineering managers?',
           ],
         };
     }
@@ -612,69 +611,37 @@ export const GlobalAiAssistant: React.FC<GlobalAiAssistantProps> = ({
             {/* Drawer Content */}
             <div className="ai-drawer-content" role="log" aria-live="polite">
               {/* Context Indicator */}
+              {/* Sleek Co-pilot Status Badge */}
               <div
                 style={{
-                  background: 'rgba(30, 41, 59, 0.6)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: 'var(--radius-md)',
-                  padding: '0.75rem 1rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.625rem',
-                }}
-              >
-                <Sparkles size={16} style={{ color: '#818cf8', flexShrink: 0 }} aria-hidden="true" />
-                <div style={{ fontSize: '0.8125rem', flex: 1 }}>
-                  <div style={{ color: 'var(--text-dim)', fontSize: '0.6875rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                    Active Portal Section Context
-                  </div>
-                  <div style={{ color: 'var(--text-main)', fontWeight: 600 }}>
-                    {activeMeta.name}
-                  </div>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.725rem', marginTop: '0.125rem' }}>
-                    {activeMeta.subtitle}
-                  </div>
-                </div>
-              </div>
-
-              {/* Status Banner when unconfigured */}
-              {!assistantStatus?.is_configured && (
-                <div
-                  style={{
-                    background: 'rgba(245, 158, 11, 0.08)',
-                    border: '1px solid rgba(245, 158, 11, 0.25)',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '0.75rem 1rem',
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
-                    <AlertCircle size={14} style={{ color: '#fbbf24' }} aria-hidden="true" />
-                    <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#fde68a' }}>
-                      Gemini Gateway Running in Unconfigured State
-                    </span>
-                  </div>
-                  <p style={{ fontSize: '0.725rem', color: 'var(--text-muted)', lineHeight: 1.45, margin: 0 }}>
-                    Configure <code>GEMINI_API_KEY</code> in <code>backend/.env</code> to unlock live AI responses.
-                    All deterministic features across the six sections remain 100% functional without fabrication.
-                  </p>
-                </div>
-              )}
-
-              {/* Security Guarantee Banner */}
-              <div
-                style={{
-                  background: 'rgba(99, 102, 241, 0.06)',
+                  background: 'rgba(99, 102, 241, 0.08)',
                   border: '1px solid rgba(99, 102, 241, 0.2)',
-                  borderRadius: 'var(--radius-md)',
-                  padding: '0.625rem 0.875rem',
+                  borderRadius: '12px',
+                  padding: '0.625rem 0.85rem',
                   display: 'flex',
                   alignItems: 'center',
+                  justifyContent: 'space-between',
                   gap: '0.5rem',
                 }}
               >
-                <Shield size={14} style={{ color: '#818cf8', flexShrink: 0 }} aria-hidden="true" />
-                <span style={{ fontSize: '0.725rem', color: 'var(--text-dim)' }}>
-                  All queries execute server-side through FastAPI. No API keys or credentials exist on the client.
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Sparkles size={14} style={{ color: '#818cf8', flexShrink: 0 }} aria-hidden="true" />
+                  <span style={{ fontSize: '0.775rem', fontWeight: 600, color: 'var(--text-main)' }}>
+                    Career & Interview Co-pilot
+                  </span>
+                </div>
+                <span
+                  style={{
+                    fontSize: '0.7rem',
+                    color: '#34d399',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.35rem',
+                    fontWeight: 600,
+                  }}
+                >
+                  <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#34d399', display: 'inline-block', boxShadow: '0 0 6px #34d399' }} />
+                  Live AI
                 </span>
               </div>
 
